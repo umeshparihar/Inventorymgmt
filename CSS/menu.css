@@ -1,0 +1,31 @@
+﻿#menu_hr
+     {
+         background:#800080;
+         width:100%;
+     }
+     #menu_hr ul
+     {
+         width:auto;
+         padding:10px;
+     }
+     #menu_hr ul li
+     {
+         list-style-type:none;
+         display:inline;
+         padding-right:5px;
+     }
+     #menu_hr ul li a
+     {
+         background:#800080;
+         padding:10px 15px 10px 15px;
+         text-decoration:none;
+         color:#ffffff;        
+     }
+     #menu_hr ul li a:hover
+     {
+         background:#6699cc;
+         padding:10px 15px 10px 15px;
+         text-decoration:none;
+         color:#ffffff;         
+          
+     }

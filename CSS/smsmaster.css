@@ -1,0 +1,18 @@
+﻿body 
+{
+    font-family:Times New Roman, Tahoma, Verdana;
+    width:100%;
+    background-color:#fafafa;
+}
+
+/*        Header Logo
+--------------------------------*/
+.head_logo
+{
+    width:auto;
+    border:2px solid #6699cc;
+    background-color:#6699cc;
+    padding:10px 15px 10px 15px;
+    color:#ffffff;
+    font-size:2em;
+}
