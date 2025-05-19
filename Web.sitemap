@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
+  <siteMapNode url="#" title="Dealer"  description="Create | Alter | Delete Dealer">
+    <siteMapNode url="~/Add/AddDealer.aspx" title="Add Product"  description="Add New Dealer Details" />
+    <siteMapNode url="~/Product/EditDealer.aspx" title="Edit Product"  description="Modify Dealer Details" />
+    <siteMapNode url="~/Product/DeleteDealer.aspx" title="Delete Product"  description="Delete Dealer Details" />
+  </siteMapNode>  
+  <siteMapNode url="#" title="Product"  description="Create | Alter | Delete Product">
+        <siteMapNode url="~/Product/AddProduct.aspx" title="Add Product"  description="Add New Products Details" />
+        <siteMapNode url="~/Product/EditProduct.aspx" title="Edit Product"  description="Modify Products Details" />
+      <siteMapNode url="~/Product/DeleteProduct.aspx" title="Delete Product"  description="Delete Products Details" />
+    </siteMapNode>
+</siteMap>

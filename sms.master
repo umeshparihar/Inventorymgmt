@@ -1,0 +1,105 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="sms.master.cs" Inherits="sms" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <link href="CSS/smsmaster.css" rel="stylesheet" type="text/css" />
+    <!--<link href="CSS/menu.css" rel="stylesheet" type="text/css" />-->
+    <style type="text/css">
+     #menu_hr
+     {
+         background:#800080;
+         width:100%;
+         margin:-5px 8px 0px -8px;
+     }
+     #menu_hr ul
+     {
+         width:auto;
+         padding:10px;
+     }
+     #menu_hr ul li
+     {
+         list-style-type:none;
+         display:inline;
+         padding-right:5px;
+         padding-left:5px;
+     }
+     #menu_hr ul li a
+     {
+         background:#800080;
+         text-decoration:none;
+         color:#ffffff;        
+         padding:10px 15px 10px 15px;
+     }
+     #menu_hr ul li a:hover
+     {
+         background:#6699cc;
+         padding:10px 15px 10px 15px;
+         text-decoration:none;
+         color:#ffffff;         
+          
+     }
+    </style>
+
+    <asp:ContentPlaceHolder id="head" runat="server">
+    
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+     <div style="background-color:#000000; width:100%; margin-top:-8px; margin-left:-8px; padding:10px 0px 10px 0px;">
+      <div class="head_logo">
+      Stock Management System
+      </div>
+     </div>
+        <asp:Menu ID="menu_hr" runat="server" Orientation="Horizontal" Width="100%">
+            <DynamicHoverStyle BackColor="Purple" />
+            <DynamicMenuStyle BackColor="Purple" />
+            <Items>
+                <asp:MenuItem Text="Dealer" Value="1" NavigateUrl="#">
+                    <asp:MenuItem NavigateUrl="~/Add/AddDealer.aspx" Text="Add Dealer" Value="1">
+                    </asp:MenuItem>
+                    <asp:MenuItem NavigateUrl="~/Add/EditDealer.aspx" Text="Edit Dealer" Value="2">
+                    </asp:MenuItem>
+                    <asp:MenuItem NavigateUrl="~/Add/DeleteDealer.aspx" Text="Delete Dealer" 
+                        Value="3"></asp:MenuItem>
+                    <asp:MenuItem NavigateUrl="~/Add/SearchDealer.aspx" Text="Find Dealer" 
+                        Value="4"></asp:MenuItem>
+                    <asp:MenuItem NavigateUrl="~/Add/ListofDealer.aspx" Text="Dealer's List" 
+                        Value="5"></asp:MenuItem>
+                </asp:MenuItem>
+                <asp:MenuItem Text="Product" Value="2" NavigateUrl="#">
+                    <asp:MenuItem NavigateUrl="~/Product/AddProduct.aspx" Text="Add Product" 
+                        Value="1"></asp:MenuItem>
+                    <asp:MenuItem NavigateUrl="~/Product/EditProduct.aspx" Text="Edit Product" 
+                        Value="2"></asp:MenuItem>
+                    <asp:MenuItem NavigateUrl="~/Product/DeleteProduct.aspx" Text="Delete Product" 
+                        Value="3"></asp:MenuItem>
+                </asp:MenuItem>
+<asp:MenuItem NavigateUrl="~/Customer/Customer.aspx" Text="Customer" Value="3"></asp:MenuItem>
+                <asp:MenuItem Text="Category" Value="4" NavigateUrl="~/Category/category.aspx"></asp:MenuItem>
+                <asp:MenuItem Text="Report" Value="5" NavigateUrl ="~/Reports/report.aspx"></asp:MenuItem>
+                <asp:MenuItem Text="Goto Home" Value="6" NavigateUrl ="~/Default.aspx"></asp:MenuItem>
+            </Items>
+        </asp:Menu>
+     <!--
+     <div id="menu_hr" style="margin:-20px 20px 0px -8px;">
+      <ul>
+       <li><a href="AddDealer.aspx"> Dealer </a></li>
+       <li><a href="AddProduct.aspx"> Product </a></li>
+       <li><a href="Category.aspx"> Category </a></li>
+       <li><a href="#"> Order </a></li>
+       <li><a href="#"> Reports </a></li>
+      </ul>
+     </div>
+     -->
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </div>
+    </form>
+</body>
+</html>
